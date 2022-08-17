@@ -1,0 +1,31 @@
+/* UTILITIES */
+
+@mixin pseudo($display: block, $position: absolute) {
+    content: "";
+    display: $display;
+    position: $position;
+}
+
+@mixin transition($time: 0.4s, $interpolation: ease) {
+    transition: $time $interpolation;
+}
+
+@mixin gap-vertical($spacement) {
+    margin-bottom: $spacement;
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+@mixin gap-horizontal($spacement) {
+    margin-right: $spacement;
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+@mixin background-reset {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
