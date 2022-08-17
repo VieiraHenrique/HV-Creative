@@ -58,15 +58,17 @@ li,
 a,
 button,
 textarea,
-span {
-    font-size: 1.5rem;
+.paragraph {
+    font-size: 1.6rem;
     line-height: 2.5rem;
 
     @include ipadPro {
-        font-size: 1.6rem;
+        font-size: 1.7rem;
         line-height: 2.7rem;
     }
 
     @include laptop13 {
+        font-size: 1.8rem;
+        line-height: 3rem;
     }
 }

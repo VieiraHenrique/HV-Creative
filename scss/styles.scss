@@ -3,6 +3,7 @@
 @import "./mixins/mixins-container";
 @import "./mixins/mixins-typo";
 @import "./mixins/mixins-utilities";
+@import "./mixins/mixins-spacement";
 
 @import "./utilities/colors";
 @import "./utilities/typo";
@@ -15,3 +16,4 @@
 @import "./sections/common/header";
 
 @import "./sections/hero";
+@import "./sections/statement";

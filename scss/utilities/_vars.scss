@@ -31,36 +31,6 @@ $shadow-dark: 0px 20px 40px rgba(#000, 0.3);
 
 /* MAIN SPACING */
 
-@mixin vertical-spacing() {
-    padding-top: $spacing-mobile;
-    padding-bottom: $spacing-mobile;
-
-    @include ipad {
-        padding-top: $spacing-ipad;
-        padding-bottom: $spacing-ipad;
-    }
-    @include ipadPro {
-        padding-top: $spacing-ipadPro;
-        padding-bottom: $spacing-ipadPro;
-    }
-    @include laptop13 {
-        padding-top: $spacing-laptop13;
-        padding-bottom: $spacing-laptop13;
-    }
-    @include laptop {
-        padding-top: $spacing-laptop;
-        padding-bottom: $spacing-laptop;
-    }
-    @include pc {
-        padding-top: $spacing-pc;
-        padding-bottom: $spacing-pc;
-    }
-    @include bigPc {
-        padding-top: $spacing-bigPc;
-        padding-bottom: $spacing-bigPc;
-    }
-}
-
 $spacing-mobile: 6rem;
 $spacing-ipad: 8rem;
 $spacing-ipadPro: 17rem;

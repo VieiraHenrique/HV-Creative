@@ -1,0 +1,47 @@
+.statement {
+    @include container($design-container);
+    &__image {
+        grid-column: 1/-1;
+        background-image: url("../../img/statement.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        min-height: 200px;
+
+        @include ipad {
+            min-height: unset;
+            grid-column: 1/8;
+            height: 120%;
+        }
+
+        @include laptop {
+            grid-column: 1/9;
+            height: 130%;
+        }
+    }
+
+    &__text {
+        grid-column: 1/-1;
+        grid-row: 2;
+        background-color: $bg-black;
+        color: $white;
+        @include vertical-spacing;
+        padding-left: 15%;
+        padding-right: 15%;
+
+        @include ipad {
+            grid-column: 8/-1;
+            grid-row: 1;
+        }
+
+        @include laptop {
+            grid-column: 9/-1;
+        }
+
+        h2 {
+            span {
+                color: $red;
+            }
+        }
+    }
+}

@@ -53,8 +53,8 @@ li,
 a,
 button,
 textarea,
-span {
-  font-size: 1.5rem;
+.paragraph {
+  font-size: 1.6rem;
   line-height: 2.5rem; }
   @media screen and (min-width: 1024px) {
     p,
@@ -62,9 +62,18 @@ span {
     a,
     button,
     textarea,
-    span {
-      font-size: 1.6rem;
+    .paragraph {
+      font-size: 1.7rem;
       line-height: 2.7rem; } }
+  @media screen and (min-width: 1280px) {
+    p,
+    li,
+    a,
+    button,
+    textarea,
+    .paragraph {
+      font-size: 1.8rem;
+      line-height: 3rem; } }
 
 .mt-1 {
   margin-top: 1rem; }
@@ -761,12 +770,13 @@ textarea {
 .btn-secondary {
   display: inline-block;
   color: #f94f4f;
-  padding-bottom: 1rem;
+  padding-bottom: .6rem;
   border-bottom: 2px solid #f94f4f;
+  font-weight: bold;
   transition: 0.4s ease; }
   .btn-secondary:hover {
     color: #ff9393;
-    border-bottom: 2px solid #f94f4f; }
+    border-bottom: 2px solid #ff9393; }
 
 .header {
   display: grid;
@@ -798,7 +808,7 @@ textarea {
     max-width: 16rem; }
   .header__nav {
     height: 100%;
-    padding-left: 4rem; }
+    padding-left: 6rem; }
     @media screen and (min-width: 768px) {
       .header__nav {
         background-color: #f94f4f; } }
@@ -934,3 +944,68 @@ textarea {
     .hero__content {
       padding-top: 28rem;
       padding-bottom: 28rem; } }
+
+.statement {
+  display: grid;
+  grid-template-columns: [full-start] minmax(5vw, 1fr) [container-start] repeat(12, [col-start] minmax(22px, 92.5px) [col-end]) [container-end] minmax(5vw, 1fr) [full-end]; }
+  .statement > * {
+    grid-column: container-start / container-end;
+    grid-row: 1; }
+  .statement__image {
+    grid-column: 1/-1;
+    background-image: url("../../img/statement.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    min-height: 200px; }
+    @media screen and (min-width: 768px) {
+      .statement__image {
+        min-height: unset;
+        grid-column: 1/8;
+        height: 120%; } }
+    @media screen and (min-width: 1440px) {
+      .statement__image {
+        grid-column: 1/9;
+        height: 130%; } }
+  .statement__text {
+    grid-column: 1/-1;
+    grid-row: 2;
+    background-color: #191921;
+    color: #fff;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    padding-left: 15%;
+    padding-right: 15%; }
+    @media screen and (min-width: 768px) {
+      .statement__text {
+        padding-top: 8rem;
+        padding-bottom: 8rem; } }
+    @media screen and (min-width: 1024px) {
+      .statement__text {
+        padding-top: 17rem;
+        padding-bottom: 17rem; } }
+    @media screen and (min-width: 1280px) {
+      .statement__text {
+        padding-top: 12.5rem;
+        padding-bottom: 12.5rem; } }
+    @media screen and (min-width: 1440px) {
+      .statement__text {
+        padding-top: 18rem;
+        padding-bottom: 18rem; } }
+    @media screen and (min-width: 1920px) {
+      .statement__text {
+        padding-top: 21rem;
+        padding-bottom: 21rem; } }
+    @media screen and (min-width: 2560px) {
+      .statement__text {
+        padding-top: 28rem;
+        padding-bottom: 28rem; } }
+    @media screen and (min-width: 768px) {
+      .statement__text {
+        grid-column: 8/-1;
+        grid-row: 1; } }
+    @media screen and (min-width: 1440px) {
+      .statement__text {
+        grid-column: 9/-1; } }
+    .statement__text h2 span {
+      color: #f94f4f; }

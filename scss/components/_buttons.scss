@@ -23,11 +23,12 @@
 .btn-secondary {
     display: inline-block;
     color: $red;
-    padding-bottom: 1rem;
+    padding-bottom: .6rem;
     border-bottom: 2px solid $red;
+    font-weight: bold;
     @include transition;
     &:hover {
         color: $red-light;
-        border-bottom: 2px solid $red;
+        border-bottom: 2px solid $red-light;
     }
 }
