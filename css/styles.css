@@ -852,7 +852,7 @@ textarea {
             background-color: #434356; } }
       @media screen and (min-width: 1280px) {
         .header__nav .btn {
-          padding: 2rem 3rem; } }
+          padding: 1.4rem 3rem; } }
     .header__nav a {
       color: #fff; }
       @media screen and (min-width: 768px) {
@@ -912,24 +912,24 @@ textarea {
         padding-bottom: 6rem; } }
   @media screen and (min-width: 768px) and (min-width: 768px) {
     .hero__content {
-      padding-top: 9rem;
-      padding-bottom: 9rem; } }
+      padding-top: 8rem;
+      padding-bottom: 8rem; } }
   @media screen and (min-width: 768px) and (min-width: 1024px) {
     .hero__content {
       padding-top: 17rem;
       padding-bottom: 17rem; } }
   @media screen and (min-width: 768px) and (min-width: 1280px) {
     .hero__content {
-      padding-top: 13rem;
-      padding-bottom: 13rem; } }
+      padding-top: 12.5rem;
+      padding-bottom: 12.5rem; } }
   @media screen and (min-width: 768px) and (min-width: 1440px) {
     .hero__content {
       padding-top: 18rem;
       padding-bottom: 18rem; } }
   @media screen and (min-width: 768px) and (min-width: 1920px) {
     .hero__content {
-      padding-top: 25rem;
-      padding-bottom: 25rem; } }
+      padding-top: 21rem;
+      padding-bottom: 21rem; } }
   @media screen and (min-width: 768px) and (min-width: 2560px) {
     .hero__content {
       padding-top: 28rem;
