@@ -1,16 +1,35 @@
 .title-main {
-    font-size: 8rem;
-    line-height: 8.8rem;
+    font-weight: bold;
+
+    font-size: 4rem;
+    line-height: 4.5rem;
+
+    @include ipad {
+        font-size: 5rem;
+        line-height: 5.8rem;
+    }
+
+    @include laptop13 {
+        font-size: 6rem;
+        line-height: 6.5rem;
+    }
+
+    @include laptop {
+        font-size: 8rem;
+        line-height: 8.8rem;
+    }
 }
 
 .title-secondary {
     font-size: 5.6rem;
     line-height: 6.4rem;
+    font-weight: bold;
 }
 
 .title-small {
     font-size: 2rem;
     line-height: 3.2rem;
+    font-weight: bold;
 }
 
 .title-small-extra {
@@ -35,11 +54,11 @@ a,
 button,
 textarea,
 span {
-    font-size: 1.8rem;
-    line-height: 3.2rem;
-}
+    font-size: 1.5rem;
+    line-height: 2.5rem;
 
-.paragraph {
-    margin-bottom: 4rem;
-    line-height: 1.4;
+    @include ipadPro {
+        font-size: 1.8rem;
+        line-height: 3.2rem;
+    }
 }

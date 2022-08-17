@@ -5,16 +5,31 @@
 /* MEDIA QUERIES */
 /* UTILITIES */
 .title-main {
-  font-size: 8rem;
-  line-height: 8.8rem; }
+  font-weight: bold;
+  font-size: 4rem;
+  line-height: 4.5rem; }
+  @media screen and (min-width: 768px) {
+    .title-main {
+      font-size: 5rem;
+      line-height: 5.8rem; } }
+  @media screen and (min-width: 1280px) {
+    .title-main {
+      font-size: 6rem;
+      line-height: 6.5rem; } }
+  @media screen and (min-width: 1440px) {
+    .title-main {
+      font-size: 8rem;
+      line-height: 8.8rem; } }
 
 .title-secondary {
   font-size: 5.6rem;
-  line-height: 6.4rem; }
+  line-height: 6.4rem;
+  font-weight: bold; }
 
 .title-small {
   font-size: 2rem;
-  line-height: 3.2rem; }
+  line-height: 3.2rem;
+  font-weight: bold; }
 
 .title-small-extra {
   font-size: 1.6rem; }
@@ -34,12 +49,17 @@ a,
 button,
 textarea,
 span {
-  font-size: 1.8rem;
-  line-height: 3.2rem; }
-
-.paragraph {
-  margin-bottom: 4rem;
-  line-height: 1.4; }
+  font-size: 1.5rem;
+  line-height: 2.5rem; }
+  @media screen and (min-width: 1024px) {
+    p,
+    li,
+    a,
+    button,
+    textarea,
+    span {
+      font-size: 1.8rem;
+      line-height: 3.2rem; } }
 
 .mt-1 {
   margin-top: 1rem; }
@@ -661,8 +681,7 @@ html {
 
 body {
   font-family: "Commissioner", sans-serif;
-  overflow-x: hidden;
-  background-color: #ccc; }
+  overflow-x: hidden; }
 
 body::-webkit-scrollbar {
   width: 12px;
@@ -717,10 +736,13 @@ textarea {
 
 .btn {
   display: inline-block;
-  padding: 2.6rem 4.4rem;
   transition: 0.4s ease;
   background-color: #f94f4f;
-  color: #fff; }
+  color: #fff;
+  padding: 2rem 4rem; }
+  @media screen and (min-width: 1280px) {
+    .btn {
+      padding: 2.6rem 4.4rem; } }
   .btn:hover {
     background-color: #ff9393; }
   .btn--black {
@@ -744,7 +766,8 @@ textarea {
   grid-template-columns: [full-start] minmax(5vw, 1fr) [container-start] repeat(12, [col-start] minmax(22px, 92.5px) [col-end]) [container-end] minmax(5vw, 1fr) [full-end];
   height: 11rem;
   background-color: #fff;
-  position: relative; }
+  position: relative;
+  z-index: 999; }
   .header > * {
     grid-column: container-start / container-end;
     grid-row: 1; }
@@ -754,11 +777,12 @@ textarea {
       height: 13rem; } }
   @media screen and (min-width: 1440px) {
     .header {
-      height: 18rem; } }
+      height: 15rem; } }
   .header .wrapper {
     display: flex;
     align-items: center;
-    justify-content: space-between; }
+    justify-content: space-between;
+    background-color: #fff; }
   .header__logo img {
     max-width: 16rem; }
   .header__nav {
@@ -838,3 +862,64 @@ textarea {
 
 .nav-opened .hamburger {
   background-image: url("../../../img/close.svg"); }
+
+.hero {
+  display: grid;
+  grid-template-columns: [full-start] minmax(5vw, 1fr) [container-start] repeat(12, [col-start] minmax(22px, 92.5px) [col-end]) [container-end] minmax(5vw, 1fr) [full-end]; }
+  .hero > * {
+    grid-column: container-start / container-end;
+    grid-row: 1; }
+  @media screen and (min-width: 1920px) {
+    .hero {
+      min-height: 70vh; } }
+  .hero__bg {
+    grid-column: 1/-1;
+    background-image: url("../../img/hero.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right center;
+    height: 280px; }
+    @media screen and (min-width: 768px) {
+      .hero__bg {
+        background: linear-gradient(to right, #fff 40%, rgba(255, 255, 255, 0.5) 55%, transparent 75%), url("../../img/hero.png");
+        height: unset;
+        background-position: right;
+        background-size: contain;
+        background-repeat: no-repeat; } }
+    @media screen and (min-width: 1280px) {
+      .hero__bg {
+        background: linear-gradient(to right, #fff 54%, rgba(255, 255, 255, 0.5) 70%, transparent 75%), url("../../img/hero.png");
+        background-position: right;
+        background-size: contain;
+        background-repeat: no-repeat; } }
+    @media screen and (min-width: 1440px) {
+      .hero__bg {
+        background: linear-gradient(to right, #fff 50%, rgba(255, 255, 255, 0.5) 70%, transparent 75%), url("../../img/hero.png");
+        background-position: right;
+        background-size: contain;
+        background-repeat: no-repeat; } }
+    @media screen and (min-width: 1920px) {
+      .hero__bg {
+        background: linear-gradient(to right, #fff 56%, rgba(255, 255, 255, 0.5) 72%, transparent 82%), url("../../img/hero.png");
+        background-position: right;
+        background-size: contain;
+        background-repeat: no-repeat; } }
+    @media screen and (min-width: 2560px) {
+      .hero__bg {
+        background: linear-gradient(to right, #fff 50%, rgba(255, 255, 255, 0.5) 65%, transparent 90%), url("../../img/hero.png");
+        background-position: right;
+        background-size: contain;
+        background-repeat: no-repeat; } }
+  .hero__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    grid-row: 2; }
+    @media screen and (min-width: 768px) {
+      .hero__content {
+        grid-column: 2/9;
+        grid-row: 1; } }
+    @media screen and (min-width: 1280px) {
+      .hero__content {
+        grid-column: 2/8; } }

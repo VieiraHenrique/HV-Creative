@@ -3,6 +3,7 @@
     height: 11rem;
     background-color: $white;
     position: relative;
+    z-index: 999;
 
     @include ipad {
         background: linear-gradient(to right, $white 52%, $red 52%);
@@ -10,13 +11,14 @@
     }
 
     @include laptop {
-        height: 18rem;
+        height: 15rem;
     }
 
     .wrapper {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        background-color: $white;
     }
 
     &__logo {
