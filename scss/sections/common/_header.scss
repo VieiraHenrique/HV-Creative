@@ -1,0 +1,125 @@
+.header {
+    @include container($design-container);
+    height: 11rem;
+    background-color: $white;
+    position: relative;
+
+    @include ipad {
+        background: linear-gradient(to right, $white 52%, $red 52%);
+        height: 13rem;
+    }
+
+    @include laptop {
+        height: 18rem;
+    }
+
+    .wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__logo {
+        img {
+            max-width: 16rem;
+        }
+    }
+
+    &__nav {
+        height: 100%;
+        padding-left: 4rem;
+
+        @include ipad {
+            background-color: $red;
+        }
+
+        ul {
+            position: fixed;
+            z-index: -1;
+            width: 25rem;
+            height: 30rem;
+            top: -30rem;
+            right: 2.5rem;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: space-around;
+            background-color: $bg-black;
+            padding: 2.5rem;
+            @include transition;
+
+            @include ipad {
+                all: unset;
+                list-style: none;
+                display: flex;
+                align-items: center;
+                height: 100%;
+            }
+        }
+
+        li {
+            text-align: center;
+            width: 100%;
+            @include ipad {
+                width: initial;
+                @include gap-horizontal(20px);
+            }
+            @include laptop13 {
+                @include gap-horizontal(30px);
+            }
+        }
+
+        .btn {
+            background-color: $red;
+            width: 100%;
+            padding: 2rem 0;
+            display: block;
+
+            &:hover {
+                background-color: $red-light;
+            }
+
+            @include ipad {
+                background-color: $bg-black;
+                padding: 1rem;
+
+                &:hover {
+                    background-color: $grey-dark;
+                }
+            }
+            @include laptop13 {
+                padding: 2rem 3rem;
+            }
+
+        }
+
+        a {
+            color: $white;
+            @include ipad {
+                font-size: 15px;
+            }
+        }
+    }
+
+    .hamburger {
+        width: 2.5rem;
+        height: 2.5rem;
+        background-image: url("../../../img/hamburger.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        @include ipad {
+            display: none;
+        }
+    }
+}
+
+.nav-opened {
+    .header__nav {
+        ul {
+            top: 11rem;
+        }
+    }
+    .hamburger {
+        background-image: url("../../../img/close.svg");
+    }
+}

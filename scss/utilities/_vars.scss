@@ -1,18 +1,23 @@
 /* FONTS */
 
-$font-primary: sans-serif;
-$font-secondary: serif;
+@import url("https://fonts.googleapis.com/css2?family=Commissioner:wght@400;800&display=swap");
+
+$font-primary: "Commissioner", sans-serif;
 
 /* COLORS */
 
 $white: #fff;
 $black: #000;
-$grey: #999;
+$bg-black: #191921;
+$grey-dark: #434356;
+$red: #f94f4f;
+$red-light: #ff9393;
 
 // BREAKPOINTS
 
 $ipad: 768px;
 $ipadPro: 1024px;
+$design-container: 1110px;
 $laptop13: 1280px;
 $laptop: 1440px;
 $pc: 1920px;
