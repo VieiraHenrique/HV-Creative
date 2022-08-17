@@ -3,11 +3,9 @@
     @include transition;
     background-color: $red;
     color: $white;
-    padding: 2rem 4rem;
-
-    @include laptop13 {
-        padding: 2.6rem 4.4rem;
-    }
+    padding: 1.4rem 3rem;
+    line-height: 200%;
+    text-align: center;
 
     &:hover {
         background-color: #ff9393;

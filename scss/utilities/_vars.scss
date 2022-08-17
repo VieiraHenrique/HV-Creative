@@ -28,3 +28,45 @@ $bigPc: 2560px;
 $shadow-light: -2px 2px 10px rgba(#000, 0.07);
 $shadow-medium: 0px 7px 20px rgba(#000, 0.2);
 $shadow-dark: 0px 20px 40px rgba(#000, 0.3);
+
+/* MAIN SPACING */
+
+@mixin vertical-spacing() {
+    padding-top: $spacing-mobile;
+    padding-bottom: $spacing-mobile;
+
+    @include ipad {
+        padding-top: $spacing-ipad;
+        padding-bottom: $spacing-ipad;
+    }
+    @include ipadPro {
+        padding-top: $spacing-ipadPro;
+        padding-bottom: $spacing-ipadPro;
+    }
+    @include laptop13 {
+        padding-top: $spacing-laptop13;
+        padding-bottom: $spacing-laptop13;
+    }
+    @include laptop {
+        padding-top: $spacing-laptop;
+        padding-bottom: $spacing-laptop;
+    }
+    @include pc {
+        padding-top: $spacing-pc;
+        padding-bottom: $spacing-pc;
+    }
+    @include bigPc {
+        padding-top: $spacing-bigPc;
+        padding-bottom: $spacing-bigPc;
+    }
+}
+
+$spacing-mobile: 6rem;
+$spacing-ipad: 9rem;
+$spacing-ipadPro: 17rem;
+$spacing-laptop13: 13rem;
+$spacing-laptop: 18rem;
+$spacing-pc: 25rem;
+$spacing-bigPc: 28rem;
+
+$mobile-header-height: 8rem;

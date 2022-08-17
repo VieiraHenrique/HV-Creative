@@ -5,10 +5,12 @@
 }
 
 .hero {
+    margin-top: $mobile-header-height;
     @include container($design-container);
 
-    @include pc {
-        min-height: 70vh;
+    @include ipad {
+        background: linear-gradient(to right, $white 45%, rgba($white, 0.5) 65%, transparent 85%), url("../../img/hero.png");
+        @include background-setup();
     }
 
     &__bg {
@@ -18,31 +20,8 @@
         background-size: cover;
         background-position: right center;
         height: 280px;
-
         @include ipad {
-            background: linear-gradient(to right, $white 40%, rgba($white, 0.5) 55%, transparent 75%), url("../../img/hero.png");
-            height: unset;
-            @include background-setup();
-        }
-
-        @include laptop13 {
-            background: linear-gradient(to right, $white 54%, rgba($white, 0.5) 70%, transparent 75%), url("../../img/hero.png");
-            @include background-setup();
-        }
-
-        @include laptop {
-            background: linear-gradient(to right, $white 50%, rgba($white, 0.5) 70%, transparent 75%), url("../../img/hero.png");
-            @include background-setup();
-        }
-
-        @include pc {
-            background: linear-gradient(to right, $white 56%, rgba($white, 0.5) 72%, transparent 82%), url("../../img/hero.png");
-            @include background-setup();
-        }
-
-        @include bigPc {
-            background: linear-gradient(to right, $white 50%, rgba($white, 0.5) 65%, transparent 90%), url("../../img/hero.png");
-            @include background-setup();
+            display: none;
         }
     }
 
@@ -52,14 +31,12 @@
         justify-content: center;
         align-items: flex-start;
         grid-row: 2;
+        padding: $spacing-mobile 0;
 
         @include ipad {
-            grid-column: 2/9;
-            grid-row: 1;
-        }
-
-        @include laptop13 {
             grid-column: 2/8;
+            grid-row: 1;
+            @include vertical-spacing;
         }
     }
 }

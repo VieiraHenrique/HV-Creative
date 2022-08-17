@@ -1,17 +1,22 @@
+
 .header {
     @include container($design-container);
-    height: 11rem;
+    height: $mobile-header-height;
     background-color: $white;
-    position: relative;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
     z-index: 999;
+    box-shadow: $shadow-light;
 
     @include ipad {
         background: linear-gradient(to right, $white 52%, $red 52%);
-        height: 13rem;
+        height: 10rem;
     }
 
     @include laptop {
-        height: 15rem;
+        height: 12rem;
     }
 
     .wrapper {
@@ -92,7 +97,6 @@
             @include laptop13 {
                 padding: 2rem 3rem;
             }
-
         }
 
         a {
@@ -118,7 +122,7 @@
 .nav-opened {
     .header__nav {
         ul {
-            top: 11rem;
+            top: $mobile-header-height;
         }
     }
     .hamburger {
