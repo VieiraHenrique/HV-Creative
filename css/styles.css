@@ -1203,14 +1203,15 @@ textarea {
 
 .slider-section {
   display: grid;
-  grid-template-columns: [full-start] minmax(5vw, 1fr) [container-start] repeat(12, [col-start] minmax(22px, 92.5px) [col-end]) [container-end] minmax(5vw, 1fr) [full-end]; }
+  grid-template-columns: [full-start] minmax(5vw, 1fr) [container-start] repeat(12, [col-start] minmax(22px, 92.5px) [col-end]) [container-end] minmax(5vw, 1fr) [full-end];
+  overflow-x: hidden; }
   .slider-section > * {
     grid-column: container-start / container-end;
     grid-row: 1; }
   .slider-section .slider {
     grid-column: 1/-1;
     min-height: 350px; }
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: 768px) {
       .slider-section .slider {
         min-height: 540px;
         grid-column: 7/-1; } }
@@ -1257,7 +1258,7 @@ textarea {
       .slider-section .slider-aside {
         grid-row: 1;
         max-height: 80%; } }
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: 768px) {
       .slider-section .slider-aside {
         grid-column: 1/9; } }
     .slider-section .slider-aside .controls {

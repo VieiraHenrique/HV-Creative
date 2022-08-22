@@ -1,11 +1,12 @@
 .slider-section {
     @include container($design-container);
+    overflow-x: hidden;
 
     .slider {
         grid-column: 1/-1;
         min-height: 350px;
 
-        @include laptop13 {
+        @include ipad {
             min-height: 540px;
             grid-column: 7/-1;
         }
@@ -62,7 +63,7 @@
             max-height: 80%;
         }
 
-        @include laptop13 {
+        @include ipad {
             grid-column: 1/9;
         }
 
