@@ -948,7 +948,7 @@ textarea {
   .header .hamburger {
     width: 2.5rem;
     height: 2.5rem;
-    background-image: url("../../../img/hamburger.svg");
+    background-image: url("https://vieirahenrique.github.io/HV-Creative/img/hamburger.svg");
     background-repeat: no-repeat;
     background-size: contain; }
     @media screen and (min-width: 768px) {
@@ -959,7 +959,7 @@ textarea {
   top: 8rem; }
 
 .nav-opened .hamburger {
-  background-image: url("../../../img/close.svg"); }
+  background-image: url("https://vieirahenrique.github.io/HV-Creative/img/close.svg"); }
 
 .footer {
   display: grid;
@@ -988,13 +988,13 @@ textarea {
     grid-row: 1; }
   @media screen and (min-width: 768px) {
     .hero {
-      background: linear-gradient(to right, #fff 45%, rgba(255, 255, 255, 0.5) 65%, transparent 85%), url("../../img/hero.png");
+      background: linear-gradient(to right, #fff 45%, rgba(255, 255, 255, 0.5) 65%, transparent 85%), url("https://vieirahenrique.github.io/HV-Creative/img/hero.png");
       background-position: right;
       background-size: contain;
       background-repeat: no-repeat; } }
   .hero__bg {
     grid-column: 1/-1;
-    background-image: url("../../img/hero.png");
+    background-image: url("https://vieirahenrique.github.io/HV-Creative/img/hero.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right center;
@@ -1048,7 +1048,7 @@ textarea {
     grid-row: 1; }
   .statement__image {
     grid-column: 1/-1;
-    background-image: url("../../img/statement.png");
+    background-image: url("https://vieirahenrique.github.io/HV-Creative/img/statement.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -1070,7 +1070,7 @@ textarea {
       position: absolute;
       width: 100px;
       height: 60px;
-      background-image: url("../../img/deco1.svg");
+      background-image: url("https://vieirahenrique.github.io/HV-Creative/img/deco1.svg");
       background-repeat: no-repeat;
       background-size: contain;
       bottom: -30px;
@@ -1240,7 +1240,7 @@ textarea {
       position: absolute;
       width: 100px;
       height: 60px;
-      background-image: url("../../img/deco2.svg");
+      background-image: url("https://vieirahenrique.github.io/HV-Creative/img/deco2.svg");
       background-repeat: no-repeat;
       background-size: contain;
       right: -50px;

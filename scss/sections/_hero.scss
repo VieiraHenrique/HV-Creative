@@ -9,13 +9,13 @@
     @include container($design-container);
 
     @include ipad {
-        background: linear-gradient(to right, $white 45%, rgba($white, 0.5) 65%, transparent 85%), url("../../img/hero.png");
+        background: linear-gradient(to right, $white 45%, rgba($white, 0.5) 65%, transparent 85%), url("https://vieirahenrique.github.io/HV-Creative/img/hero.png");
         @include background-setup();
     }
 
     &__bg {
         grid-column: 1/-1;
-        background-image: url("../../img/hero.png");
+        background-image: url("https://vieirahenrique.github.io/HV-Creative/img/hero.png");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: right center;

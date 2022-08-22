@@ -1,4 +1,3 @@
-
 .header {
     @include container($design-container);
     height: $mobile-header-height;
@@ -110,7 +109,7 @@
     .hamburger {
         width: 2.5rem;
         height: 2.5rem;
-        background-image: url("../../../img/hamburger.svg");
+        background-image: url("https://vieirahenrique.github.io/HV-Creative/img/hamburger.svg");
         background-repeat: no-repeat;
         background-size: contain;
         @include ipad {
@@ -126,6 +125,6 @@
         }
     }
     .hamburger {
-        background-image: url("../../../img/close.svg");
+        background-image: url("https://vieirahenrique.github.io/HV-Creative/img/close.svg");
     }
 }
