@@ -7,16 +7,36 @@
         background-size: cover;
         background-position: center center;
         min-height: 200px;
+        position: relative;
 
         @include ipad {
             min-height: unset;
             grid-column: 1/8;
             height: 120%;
+            overflow-x: unset;
         }
 
         @include laptop {
             grid-column: 1/9;
             height: 130%;
+        }
+
+        &::after {
+            @include pseudo;
+            width: 100px;
+            height: 60px;
+            background-image: url("../../img/deco1.svg");
+            background-repeat: no-repeat;
+            background-size: contain;
+            bottom: -30px;
+            left: 30px;
+
+            @include ipad {
+                bottom: unset;
+                left: unset;
+                right: -50px;
+                top: 220px;
+            }
         }
     }
 

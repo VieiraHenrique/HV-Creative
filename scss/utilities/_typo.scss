@@ -26,19 +26,81 @@
 }
 
 .title-secondary {
-    font-size: 5.6rem;
-    line-height: 6.4rem;
+    font-size: 3rem;
+    line-height: 4rem;
     font-weight: bold;
+
+    @include ipad {
+        font-size: 3.2rem;
+        line-height: 4.8rem;
+    }
+
+    @include laptop13 {
+        font-size: 5rem;
+        line-height: 5.5rem;
+    }
+
+    @include laptop {
+        font-size: 6rem;
+        line-height: 6.8rem;
+    }
+
+    @include pc {
+        font-size: 8rem;
+        line-height: 8.8rem;
+    }
+}
+
+.title-tertiary {
+    font-size: 3rem;
+    line-height: 4rem;
+    font-weight: bold;
+
+    @include ipad {
+        font-size: 3.5rem;
+        line-height: 4.5rem;
+    }
+
+    @include laptop13 {
+        font-size: 4rem;
+        line-height: 5rem;
+    }
+
+    @include laptop {
+        font-size: 5rem;
+        line-height: 6rem;
+    }
+
+    @include pc {
+        font-size: 5.2rem;
+        line-height: 6rem;
+    }
 }
 
 .title-small {
-    font-size: 2rem;
+    font-size: 2.25rem;
     line-height: 3.2rem;
     font-weight: bold;
+
+    @include laptop13 {
+        font-size: 2.5rem;
+        line-height: 3.6rem;
+    }
 }
 
 .title-small-extra {
     font-size: 1.6rem;
+    line-height: 2.8rem;
+    font-weight: bold;
+    @include ipad {
+        font-size: 1.8rem;
+        line-height: 3.4rem;
+    }
+
+    @include laptop {
+        font-size: 2rem;
+        line-height: 3.2rem;
+    }
 }
 
 .suptitle {

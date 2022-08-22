@@ -1,0 +1,117 @@
+.slider-section {
+    @include container($design-container);
+
+    .slider {
+        grid-column: 1/-1;
+        min-height: 350px;
+
+        @include laptop13 {
+            min-height: 540px;
+            grid-column: 7/-1;
+        }
+
+        @include laptop {
+            min-height: 660px;
+        }
+
+        @include pc {
+            min-height: 840px;
+        }
+        @include bigPc {
+            min-height: 1150px;
+        }
+    }
+
+    .slider-aside {
+        grid-column: 1/-1;
+        grid-row: 2;
+        background-color: $black;
+        z-index: 1;
+
+        color: $white;
+        position: relative;
+        padding: 15% 20%;
+
+        .wrapper {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: space-between;
+            gap: 50px;
+        }
+
+        &::after {
+            @include pseudo;
+            width: 100px;
+            height: 60px;
+            background-image: url("../../img/deco2.svg");
+            background-repeat: no-repeat;
+            background-size: contain;
+            right: -50px;
+            top: 220px;
+            display: none;
+
+            @include ipad {
+                display: block;
+            }
+        }
+
+        @include ipad {
+            grid-row: 1;
+            max-height: 80%;
+        }
+
+        @include laptop13 {
+            grid-column: 1/9;
+        }
+
+        .controls {
+            display: flex;
+            align-items: center;
+            left: 0;
+            bottom: 15%;
+
+            button {
+                border: none;
+                outline: none;
+                background: transparent;
+                cursor: pointer;
+            }
+
+            img {
+                max-width: 50px;
+                &:first-child {
+                    margin-right: 30px;
+                }
+            }
+        }
+    }
+}
+
+.slider {
+    position: relative;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+
+    img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .caption {
+        position: absolute;
+        bottom: 50px;
+        right: 50px;
+        color: $white;
+        text-align: right;
+    }
+}

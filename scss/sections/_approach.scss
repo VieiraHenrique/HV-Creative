@@ -1,0 +1,57 @@
+.approach {
+    @include container($design-container);
+    position: relative;
+    z-index: 1;
+
+    &-aside {
+        padding: 15%;
+        position: relative;
+
+        @include ipad {
+            grid-column: 1/7;
+        }
+
+        &__title {
+            @extend .title-tertiary;
+            position: absolute;
+            max-width: 70%;
+            font-weight: bold;
+            color: $white;
+
+            @include ipad {
+                color: $black;
+                top: 200px;
+            }
+
+            @include laptop13 {
+                top: 270px;
+                right: -130px;
+            }
+
+            @include laptop {
+                right: -130px;
+                top: 330px;
+            }
+
+            @include pc {
+                top: 470px;
+                right: -150px;
+                max-width: 55%;
+            }
+        }
+    }
+
+    &-list {
+        background-color: $red;
+        color: $white;
+        grid-column: 1/-1;
+        @include vertical-spacing;
+        padding-left: 15%;
+        padding-right: 15%;
+        padding-top: 180px;
+
+        @include ipad {
+            grid-column: 7/-1;
+        }
+    }
+}

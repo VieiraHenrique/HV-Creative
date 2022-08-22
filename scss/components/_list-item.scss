@@ -1,0 +1,33 @@
+.list-item {
+    @extend .mx-auto;
+
+    @include laptop13 {
+        max-width: 60%;
+    }
+
+    &__number {
+        position: relative;
+        bottom: -45px;
+        font-size: 80px;
+        color: rgba($color: $white, $alpha: 0.2);
+        @extend .title-main;
+
+        @include ipad {
+            bottom: -20px;
+            left: -20px;
+        }
+
+        @include laptop13 {
+            bottom: -30px;
+        }
+    }
+
+    &__title {
+        @extend .title-small;
+        margin-bottom: 15px;
+    }
+
+    &__content {
+        @extend .paragraph;
+    }
+}

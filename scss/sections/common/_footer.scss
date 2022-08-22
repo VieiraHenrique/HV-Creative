@@ -1,0 +1,19 @@
+.footer {
+    @include container($design-container);
+
+    .wrapper {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-direction: column;
+        gap: 20px;
+
+        @include ipad {
+            flex-direction: row;
+        }
+
+        h2 {
+            max-width: 500px;
+        }
+    }
+}
