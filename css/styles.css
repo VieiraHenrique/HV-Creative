@@ -975,9 +975,13 @@ textarea {
     gap: 20px; }
     @media screen and (min-width: 768px) {
       .footer .wrapper {
-        flex-direction: row; } }
+        flex-direction: row;
+        align-items: center; } }
     .footer .wrapper h2 {
       max-width: 500px; }
+      @media screen and (min-width: 1920px) {
+        .footer .wrapper h2 {
+          max-width: 50%; } }
 
 .hero {
   margin-top: 8rem;
